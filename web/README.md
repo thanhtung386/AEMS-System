@@ -2,6 +2,11 @@
 
 > Building a web application to collect and monitor indicators of the aquaculture environment. It also cans control some water and oxygen pumps
 
+## Demo web pictures
+> [!NOTE]
+> This is dashboard UI
+![pic_0](https://github.com/thanhtung386/AEMS-System/blob/main/web/Image/Dashboard-UI.jpg)
+
 ### ✨ [Demo]
 
 ![pic_0](https://github.com/thanhtung386/web_iot_interface/blob/main/img/demo.png)
