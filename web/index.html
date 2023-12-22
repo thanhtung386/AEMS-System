@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+
+        <title>AEMS</title>
+        <link REL="icon" href="https://cdn-icons-png.flaticon.com/512/1299/1299961.png">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css"
+        href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="image-div">
+                <img class="image" src="./img/001.ico" alt="">
+            </div>
+            Aquaculture Environmental Monitoring System
+        </header>
+        <div class="body-content">
+            <div class = "menu">
+                <ul class = "menu-list">
+                    <li><a class ="menu-button" href="#" onclick="switchPage('living_room')"><img style="width: 100px;height: 100px;" src="./img/monitoring.png" alt="">Monitoring</a></li>
+                    <li><a class ="menu-button" href="#" onclick="switchPage('bed_room')"><img style="width: 100px;height: 100px;" src="./img/control.png" alt="">Control</a></li>
+
+                </ul>
+            </div>
+            <section id = "living_room" style="width: 100%;">
+                <div class = "main_content">
+                    <div class = sensor style="width: 100%; height: 40%;">
+                        <ul class = "sensor-list">
+                            <li><img class = "sensor-list-icon" src="./img/ph.png" alt=""> <span class = "sensor-list-content">PH: <span id="ph">None</span><span></span></span></li>
+                            <li><img class = "sensor-list-icon" src="./img/turbidity.png" alt=""> <span class = "sensor-list-content">Turbidity: <span id="turbidity">None</span><span> NTU</span></span></li>
+                            <li><img class = "sensor-list-icon" src="./img/temperature.png" alt=""> <span class = "sensor-list-content">Temperature: <span id="temperature">None</span><span> ℃</span></span></li>
+                            <li><img class = "sensor-list-icon" src="./img/status.webp" alt=""><span class = "sensor-list-content">Status Operation: <span id="status">None</span></span></li>
+                        </ul>
+                    </div>
+
+                    <div id="chart-list" style=" padding: 0;margin-top: 50px;display: flex; height: auto;">
+                        <canvas class="chart-list-member" id="PH-chart" style="max-width:33%;"></canvas>
+                        <canvas class="chart-list-member" id="Temperature-chart" style="max-width:33%;margin-left: 50px;"></canvas>
+                        <canvas class="chart-list-member" id="Turbidity-chart" style="max-width:33%;margin-left: 50px;"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "bed_room" style="display:none; width: max-content;">
+                <div class = "main_content">
+                    <div class = "control">
+                        <ul class = "control-list-5">
+                            <li>
+                                <h3 id = "device13-content">Device 1: Oxygen Pump</h3>
+                                <img id = "air2-img" src="./img/oxygen_off.png" alt="">
+                                <span class = "control-content">
+                                    <label class="switch">
+                                        <input id ="oxygen-switch" type="checkbox" onchange="updateSwitchLabel('oxygen-state')">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span id = "oxygen-state">OFF</span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <h3 id = "device15-content">Device 2: Water Pump</h3>
+                                <img id = "fan3-img" src="./img/water_off.png" alt="">
+                                <span class = "control-content">
+                                    <label class="switch">
+                                        <input id ="water-switch" type="checkbox" onchange="updateSwitchLabel('water-state')">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span id = "water-state">OFF</span>
+
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <footer>
+            Trần Thanh Tùng - 20119386
+        </footer>   
+        <footer>
+            Võ Thị Thúy Vi - 20119388
+        </footer>         
+        <script src="script.js"></script>
+
+        <script>
+            // Gọi hàm onConnect khi trang được mở
+            window.onload = function() {
+                startConnect();
+            };
+            //updateSwitchLabel();
+         </script>
+
+    </body>
+</html>

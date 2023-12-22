@@ -1,0 +1,327 @@
+*{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+li{
+    height: auto;
+}
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 236, 237);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.body-content{
+    height: calc(90% - 60px);
+    display: inline-block;
+    width: 100%;
+}
+.body-content .menu{
+    background-color: #4e5c63;
+    left: 0;
+    width: 15%;
+    height: 90%;
+    position: absolute;
+    font-family: 'Merriweather', serif;
+
+}
+.body-content .menu .menu-list{
+    color: #ffffff;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.body-content .menu .menu-list li .menu-button::before{
+    content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.body-content .menu .menu-list li .menu-button:hover,
+.body-content .menu .menu-list li .menu-button.hover
+{
+    background-color: #77d0d0;
+    letter-spacing: 3px;
+}
+.body-content .menu .menu-list:hover li .menu-button::before{
+    transform: skewX(45deg) translate(400px);
+}
+
+.body-content .menu .menu-list li .menu-button{
+    text-decoration: none;
+    color: #404040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    justify-content: center;
+    height: 150px;
+    width: 190px;
+
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+
+    
+}
+
+.body-content #living_room .main_content{
+    right: 0;
+    width: 85%;
+    height: calc(90% - 60px);
+    position: absolute;
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    align-content: space-between;
+}
+
+.body-content #bed_room .main_content{
+    right: 0;
+    width: 85%;
+    height: calc(90% - 60px);
+    position: absolute;
+    background-color:  rgb(136, 145, 142);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content .sensor .sensor-list{
+    list-style: none;
+    width: 100%;
+    height: calc(40% - 20px);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.main_content .chart-list{
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.main_content .sensor .sensor-list li{
+    text-decoration: none;
+    color: #6e0101;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0px;
+    justify-content: center;
+    margin-top: 10px;
+    height: 200px;
+    width: 30%;
+    flex-direction: column; 
+    border: #ccc solid 0px;
+    font-size: 26px;
+}
+
+.main_content .sensor .sensor-list .sensor-list-icon{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+#bed_room .main_content .control .control-list-5,
+#kitchen_room .main_content .control .control-list-3,
+#living_room .main_content .control .control-list-1
+{
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#living_room .main_content .control .control-list-1 #light-img,
+#living_room .main_content .control .control-list-1 #fan-img,
+#living_room .main_content .control .control-list-1 #tv-img,
+
+#kitchen_room .main_content .control .control-list-3 #oven-img,
+#kitchen_room .main_content .control .control-list-3 #fan2-img,
+#kitchen_room .main_content .control .control-list-3 #light2-img,
+
+#bed_room .main_content .control .control-list-5 #air2-img,
+#bed_room .main_content .control .control-list-5 #light3-img,
+#bed_room .main_content .control .control-list-5 #fan3-img
+
+{
+    width:80px;
+    margin-bottom: 20px;
+}
+#device1-content,
+#device2-content,
+#device3-content,
+
+#device7-content,
+#device8-content,
+#device9-content,
+
+#device13-content,
+#device14-content,
+#device15-content
+
+{
+    margin-top:0px;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+    
+}
+
+#living_room .main_content .control .control-list-1 .control-content,
+#kitchen_room .main_content .control .control-list-3 .control-content,
+#bed_room .main_content .control .control-list-5 .control-content
+
+{
+    line-height: 33px;
+}
+
+#living_room .main_content .control .control-list-1 li,
+
+#kitchen_room .main_content .control .control-list-3 li,
+
+#bed_room .main_content .control .control-list-5 li
+
+{
+    text-decoration: none;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    justify-content: center;
+    height: 200px;
+    width: 28%;
+    flex-direction: column;
+    border: #ccc solid 5px;
+    font-size: 18px;
+    margin-right: 42px;
+    align-content: center;
+    font-family: 'Merriweather', serif;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+footer{
+
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #77d0d0;
+    height: 30px;
+}
+
+#chart-list{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
+
+#image-div{
+    width: auto;
+    height: 100%;
+}
+
