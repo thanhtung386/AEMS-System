@@ -1,6 +1,6 @@
-<h1 align="center">Welcome to my web IoTs 👋</h1>
+<h1 align="center">Welcome to my AEMS System WEB 👋</h1>
 
-> Building a web application to control devices such as fans, lights, etc., and store their values in a database likes Firebase.
+> Building a web application to collect and monitor indicators of the aquaculture environment. It also cans control some water and oxygen pumps
 
 ### ✨ [Demo]
 
