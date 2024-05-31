@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/baseline_touch_app_24"
+            android:title="@string/nav_favorite" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/statistics"
+            android:title="@string/menu_slideshow" />
+    </group>
+<!--    <item android:title="@string/nav_account">
+           <menu>
+              <item android:id="@+id/nav_account"
+                    android:title="@string/nav_account"
+                    android:icon="@drawable/ic_account_circle_24"
+
+               />
+
+                <item android:id="@+id/nav_password"
+              android:title="@string/nav_password"
+              android:icon="@drawable/ic_password_24"
+            />
+
+           </menu>
+
+       </item>-->
+</menu>

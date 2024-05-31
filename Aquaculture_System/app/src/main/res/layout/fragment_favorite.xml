@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!-- Mục 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border1"> <!-- Add background drawable for framing -->
+
+        <ImageView
+            android:id="@+id/img_avatar1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/oxygen"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oxygen Generator"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switchoxy"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <!-- Mục 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border1"> <!-- Add background drawable for framing -->
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/generator"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Water generator"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switchwater"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

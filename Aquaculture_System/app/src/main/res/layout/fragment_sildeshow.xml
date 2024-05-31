@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TextView trước biểu đồ thứ nhất -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartViewTemp1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!-- TextView trước biểu đồ thứ hai -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pondus Hydrogenii"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartViewTemp2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!-- TextView trước biểu đồ thứ ba -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turbidity of Water"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartViewTemp3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="200dp"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>

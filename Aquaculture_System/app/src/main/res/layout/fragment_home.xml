@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!-- Mục 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border"> <!-- Add background drawable for framing -->
+
+        <ImageView
+            android:id="@+id/img_avatar1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/temperature"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30°C"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Mục 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border"> <!-- Add background drawable for framing -->
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ph"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pondus Hydrogenii"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/PH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7.5"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Mục 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border"> <!-- Add background drawable for framing -->
+
+        <ImageView
+            android:id="@+id/img_avatar3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/turbidity"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Turbidity of water"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/Turbidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23 NTU "
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border"> <!-- Add background drawable for framing -->
+
+        <ImageView
+            android:id="@+id/img_avatar4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/status"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status of Operation"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stable"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#BEFFFFFF" /> <!-- Màu nền của khung -->
+            <corners android:radius="20dp" /> <!-- Bán kính của góc bo tròn -->
+            <stroke
+                android:width="2dp"
+                android:color="#191818" /> <!-- Độ dày và màu sắc của viền -->
+        </shape>
+    </item>
+</layer-list>
